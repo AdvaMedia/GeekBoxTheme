@@ -1,0 +1,3 @@
+- @taxons = @taxon && @taxon.parent ? @taxon.parent.children : Taxon.roots
+= form_tag products_url, :method => :get do
+	= search_field_tag :keywords, params[:keywords], {:class=>"i-text", :placeholder=>t('geekbox.search_bar.placeholder')}

@@ -1,0 +1,14 @@
+.offers dl { background:url(../images//separate-center.png) 50% 100% no-repeat; position:relative; }
+.offers dl dt { float: left; width: 210px; position:relative; }
+.offers dl dd { margin-left: 230px; padding: 0; position:relative; }
+
+.offers dl dt img { float:left; margin:0; }
+
+
+.service-item { font-size:}
+.service-item li { display:inline; float:left; margin:0 1.5em 0 0; padding:0; color:#ccc; }
+.service-item li a { color:#333; }
+.service-item li img { margin:0 .5em 0 0; vertical-align: middle; }
+
+
+

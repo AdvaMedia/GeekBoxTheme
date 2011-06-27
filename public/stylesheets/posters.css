@@ -1,0 +1,62 @@
+/* 
+| Здесь прописываются классы для 
+| оформления постера на главной странице 
+*/
+
+
+/*  Основные классы*/
+
+.poster { border:5px solid #F3F3F3; position:relative; min-height:28.5em; }
+  .geekbox-info {}
+	.about-geekbox {}
+	  .about-geekbox .wrap-text {}
+		.about-geekbox span[lang="ru"] {}
+		.about-geekbox del {}
+		.about-geekbox ins {}
+		.about-geekbox abbr {}
+	.quick-contacts {}
+	  .quick-contacts .wrap-text {}
+	    .quick-contacts .operating-hours {}
+		  .quick-contacts .operating-hours {}
+			.operating-hours .weekdays { white-space:nowrap; }
+			.operating-hours .saturday { white-space:nowrap; }
+			.operating-hours .sunday { white-space:nowrap; }
+		.quick-contacts .contact-us {}
+	      .contact-us .phone {}
+		  .contact-us .skype {}
+	.like-panel { }
+	  .like-panel #___plusone_0 { }
+	  .opera .like-panel #___plusone_0 { }
+  .poster-info {}
+    .poster-info .qr { opacity:.5; transition: opacity .3s linear 0s; -webkit-transition: opacity .3s linear 0s; -moz-transition: opacity .3s linear 0s; -o-transition: opacity .3s linear 0s;  }
+	.poster-info .qr:hover { opacity:1; }
+
+
+/* Модификационные */
+
+.skcandy-07-june-2011 { background:#F3F3F3 url(../images//content/skullcandy_1.jpg) 0 -150px; }
+.skcandy-07-june-2011 .geekbox-info { width:18.5em; position:relative; top:1.5em; }
+.skcandy-07-june-2011 .about-geekbox {
+  background: rgba(3, 156, 216, .8);
+  color: #EBFFFD;
+  padding: .5em;
+  text-shadow: 0 1px #2A5A81;
+}
+.skcandy-07-june-2011 .quick-contacts {
+    background:rgba(0, 0, 0, .8);
+    color:#C5D0D3;
+    padding:.5em;
+}
+.skcandy-07-june-2011 .quick-contacts strong, 
+.skcandy-07-june-2011 .phone,
+.skcandy-07-june-2011 .skype { display:block; }
+.skcandy-07-june-2011 .phone,.skcandy-07-june-2011 .skype { color:#D1EE9D; }
+.skcandy-07-june-2011 .poster-info { position:absolute; right:1.5em; top:1.5em; text-align:right; }
+
+
+
+
+
+
+
+

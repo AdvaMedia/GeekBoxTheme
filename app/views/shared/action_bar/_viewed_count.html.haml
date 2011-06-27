@@ -1,0 +1,2 @@
+%span= raw t('geekbox.action_bar.actions.views')
+%i{:class=>"count#{ ' on' if get_recently_viewed_products.any?}"}= get_recently_viewed_products.count

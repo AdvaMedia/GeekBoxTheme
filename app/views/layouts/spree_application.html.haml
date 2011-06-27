@@ -1,0 +1,18 @@
+!!! 5
+%html
+	%head
+		= hook :inside_head do
+			= render :partial => 'shared/geek_head'
+	%body
+		%header.header.container
+			.page-margin.box
+				= geekbox_logo
+				%nav
+					%ul.container= render 'shared/nav_bar'
+				.b-search-small= render 'shared/search'
+				%ul.user-panel= hook :shared_login_bar
+		= hook :main do
+			%section.page-margin.box.container
+				= yield
+		%footer.footer.container{:role=>"contentinfo"}
+			.page-margin.box= render 'shared/footer'

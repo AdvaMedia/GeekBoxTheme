@@ -1,0 +1,9 @@
+.float_area
+	= link_to t('geekbox.action_bar.selflink'), "#", :class=>"label", :rel=>"nofollow"
+	%ul.bauyer-actions
+		%li.views
+			= link_to "#", :rel=>"nofollow" do
+				= render 'shared/action_bar/viewed_count'
+		%li.compare
+			= link_to "#", :rel=>"nofollow" do
+				= render 'shared/action_bar/compare_count'
