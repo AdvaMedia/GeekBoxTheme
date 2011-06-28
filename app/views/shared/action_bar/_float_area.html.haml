@@ -1,9 +1,16 @@
-.float_area
+.float-area
 	= link_to t('geekbox.action_bar.selflink'), "#", :class=>"label", :rel=>"nofollow"
 	%ul.bauyer-actions
 		%li.views
 			= link_to "#", :rel=>"nofollow" do
 				= render 'shared/action_bar/viewed_count'
 		%li.compare
-			= link_to "#", :rel=>"nofollow" do
+			= link_to compare_products_path, :rel=>"nofollow" do
 				= render 'shared/action_bar/compare_count'
+		%li.orders
+			= link_to cart_path, :rel=>"nofollow" do
+				= render 'shared/action_bar/orders_count'
+		%li.sum
+			= render 'shared/action_bar/cart_item'
+	= render 'shared/action_bar/checkout_button' unless (current_order.nil? or current_order.line_items.empty?)
+	= render 'shared/action_bar/helpers_hidden'

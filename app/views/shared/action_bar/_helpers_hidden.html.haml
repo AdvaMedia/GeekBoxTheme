@@ -1,0 +1,5 @@
+.helpers.hidden
+	- %w{orders compare views}.each do |help_item|
+		%div{:class=>"#{help_item}-help"}
+			%small
+				%em= raw t("geekbox.action_bar.help.#{help_item}")

@@ -1,1 +1,2 @@
 %span= raw t('geekbox.action_bar.actions.compare')
+%i{:class=>"count#{ ' on' if @comparable_products.any?}"}= @comparable_products.count

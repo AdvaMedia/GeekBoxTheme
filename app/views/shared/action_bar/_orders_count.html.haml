@@ -1,0 +1,2 @@
+%span= raw t('geekbox.action_bar.actions.orders')
+%i{:class=>"count#{ ' on' if (!@order.nil? and @order.line_items.any?)}"}= @order.nil? ? 0 : @order.line_items.count

@@ -1,0 +1,6 @@
+%span
+	= t('geekbox.action_bar.actions.sum')
+	%br
+	%strong
+		%b.money= (current_order.nil? or current_order.line_items.empty?) ? 0 : geek_order_price(current_order)
+	= t('number.currency.format.unit')
