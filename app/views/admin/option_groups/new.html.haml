@@ -1,0 +1,8 @@
+= render :partial => 'admin/shared/configuration_menu'
+
+%h1= t('admin.new_option_groups')
+= render 'shared/error_messages', :target => @option_group
+
+= form_for(:option_group, :url => collection_url) do |f|
+	= render :partial => "form", :locals => { :f => f }
+	%p.form-buttons= button t("create")

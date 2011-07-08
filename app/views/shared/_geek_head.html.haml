@@ -3,7 +3,7 @@
 = meta_data_tags
 = csrf_meta_tag
 = geek_stylesheets
-= javascript_include_tag 'jquery-1.4.2.min', 'jquery.validate.min.js', 'rails', 'application', :cache => 'jquery-core'
+= javascript_include_tag 'singleton', 'jquery-1.4.2.min', 'jquery.validate.min.js', 'rails', 'application', 'userpanel', :cache => 'jquery-core'
 -unless I18n.locale.to_s[0..1] == 'en'
 	= javascript_include_tag ['localization/messages_', I18n.locale.to_s[0..1], '.js'].join
 /[if lt IE 9]

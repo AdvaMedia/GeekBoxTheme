@@ -3,3 +3,10 @@
 		%div{:class=>"#{help_item}-help"}
 			%small
 				%em= raw t("geekbox.action_bar.help.#{help_item}")
+%span.help-panel
+	%small.show_botton
+		[ ? ]
+		%a.pseudo{:href=>"#", :rel=>"nofollow"}= t('geekbox.action_bar.help.button.show')
+	%small.hide_botton.hidden
+		[ X ]
+		%a.pseudo{:href=>"#", :rel=>"nofollow"}= t('geekbox.action_bar.help.button.hide')

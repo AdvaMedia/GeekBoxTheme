@@ -1,0 +1,25 @@
+= render :partial => 'admin/shared/configuration_menu'
+.toolbar
+	%ul.actions
+		%li= button_link_to t('admin.new_option_group'), new_object_url, :icon => 'add'
+	%br.clear
+	
+%h1= t('admin.manage_option_groups')
+
+%table.index
+	%thead
+		= hook :admin_option_groups_index_headers do
+			- %w{name presentation}.each do |tbl_header|
+				%th= t("admin.option_groups.table.header.#{tbl_header}")
+		%th= hook :admin_option_groups_index_header_actions
+	%tbody
+		- OptionGroup.all.each do |op_group|
+			%tr{:id=> dom_id(op_group)}
+				- locals = {:op_group => op_group}
+				= hook :admin_option_groups_index_rows, locals do
+					%td= op_group.name
+					%td= op_group.title
+				%td
+					= link_to_edit op_group
+					&nbsp;
+					= link_to_delete op_group

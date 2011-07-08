@@ -1,0 +1,8 @@
+= render :partial => 'admin/shared/configuration_menu'
+
+%h1= t('admin.edit_option_groups')
+= render 'shared/error_messages', :target => @option_group
+
+= form_for(:option_group, :url => admin_option_group_path(@option_group), :html => {:method => :put}) do |f|
+	= render :partial => "form", :locals => { :f => f }
+	%p.form-buttons= button t("edit")
